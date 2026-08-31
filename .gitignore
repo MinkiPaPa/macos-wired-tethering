@@ -1,9 +1,14 @@
 .DS_Store
 build/
-dist/
 *.o
 *.pkg
 *.zip
+# Publish the release zip and checksums; keep the unpack staging folder local.
+# 배포 zip·체크섬은 저장소에 올리고, 압축 해제 스테이징 폴더는 로컬에만 둔다.
+dist/*
+!dist/*.zip
+!dist/*.sha256
+!dist/SHA256SUMS
 xcuserdata/
 *.xcuserstate
 .idea/

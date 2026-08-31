@@ -27,7 +27,7 @@ make uninstall  # 제거
 | `build/macOS wired tethering.app` | 메뉴 막대 앱 (엔진·헬퍼 포함) |
 | `build/macos-wired-tethering-engine` | CLI 엔진 |
 | `build/macos-wired-tethering-helper` | 권한 헬퍼 |
-| `dist/` | `make dist` 산출물 (gitignore) |
+| `dist/` | `make dist` 산출물. zip과 체크섬은 GitHub에 올리고, 압축 해제 폴더는 로컬 전용 |
 
 ## Makefile 타깃
 

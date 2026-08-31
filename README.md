@@ -42,7 +42,7 @@ Android phone (USB RNDIS)
 
 ## 설치
 
-zip을 받은 뒤에는 앱만 바로 열기보다, 압축을 풀고 `install.sh`를 실행해 주세요. AirDrop이나 메일로 받은 앱은 Gatekeeper가 열기를 막을 수 있고, 설치 스크립트가 격리 속성을 풀어 줍니다.
+배포 파일은 [dist](dist/) 폴더에서 받을 수 있습니다. zip을 받은 뒤에는 앱만 바로 열기보다, 압축을 풀고 `install.sh`를 실행해 주세요. AirDrop이나 메일로 받은 앱은 Gatekeeper가 열기를 막을 수 있고, 설치 스크립트가 격리 속성을 풀어 줍니다.
 
 ```bash
 unzip macos-wired-tethering-1.0.0-macos.zip
