@@ -1,0 +1,96 @@
+macOS wired tethering 1.0.0 — 설치 방법
+========================================
+
+Finder에서 앱만 더블클릭하지 마세요.
+AirDrop·메일·브라우저로 받은 앱은 Gatekeeper가 막을 수 있습니다.
+반드시 아래 순서대로 install.sh 를 실행하세요.
+
+
+1. zip 확인 (선택)
+
+   터미널에서 zip 이 있는 폴더로 이동한 뒤:
+
+     shasum -a 256 -c macos-wired-tethering-1.0.0-macos.zip.sha256
+
+   SHA256SUMS 파일이 있으면 그 내용과 같아도 됩니다.
+
+
+2. 압축 해제
+
+     unzip macos-wired-tethering-1.0.0-macos.zip
+     cd macos-wired-tethering-1.0.0
+
+
+3. 설치
+
+     ./install.sh
+
+   설치 후 바로 실행하려면:
+
+     ./install.sh --open
+
+   관리자 암호를 물을 수 있습니다. 앱은 /Applications 로 복사됩니다.
+
+
+4. 사용
+
+   1) 안드로이드 폰을 USB 데이터 케이블로 연결합니다. (충전 전용 케이블은 안 됩니다)
+   2) 폰에서 USB 테더링을 켭니다.
+        설정 → 네트워크 및 인터넷 → 핫스팟 및 테더링 → USB 테더링
+        삼성: 설정 → 연결 → 모바일 핫스팟 및 테더링 → USB 테더링
+   3) 메뉴 막대(화면 오른쪽 위)의 macOS wired tethering 아이콘을 엽니다.
+   4) 장치가 "테더링 준비됨"인지 확인한 뒤 연결을 누릅니다.
+   5) 헬퍼가 없으면 앱 인증 창에 관리자 암호를 입력합니다.
+      시스템 자물쇠 창은 뜨지 않습니다.
+
+   "기본 연결로 사용"을 켜면 USB 테더링이 Wi-Fi보다 우선합니다.
+   끄면 시스템 기본 경로는 그대로 두고 테더링만 올립니다.
+
+
+5. 제거
+
+     ./uninstall.sh
+
+   또는 이 폴더에서:
+
+     ./uninstall.sh
+
+
+문제가 있을 때
+--------------
+
+- 앱이 열리지 않으면 터미널에서:
+
+     xattr -dr com.apple.quarantine "/Applications/macOS wired tethering.app"
+     open "/Applications/macOS wired tethering.app"
+
+- 이 zip 은 빌드한 Mac 의 CPU 에서만 실행됩니다.
+  Apple Silicon(arm64) zip 은 Intel Mac 에서 실행되지 않습니다.
+
+- ad-hoc 서명 빌드는 권한 헬퍼가 등록되지 않을 수 있습니다.
+  그때는 연결할 때마다 관리자 암호를 넣으면 됩니다.
+
+
+English
+=======
+
+Do not double-click the .app inside the zip.
+Use install.sh so Gatekeeper quarantine is removed.
+
+  unzip macos-wired-tethering-1.0.0-macos.zip
+  cd macos-wired-tethering-1.0.0
+  ./install.sh
+  ./install.sh --open
+
+1. Connect an Android phone with a data USB cable.
+2. Turn on USB tethering on the phone.
+3. Open the menu-bar icon and press Connect when the device is Ready to tether.
+4. If the privilege helper is not registered, enter the administrator
+   password in the app window (not the system lock dialog).
+
+Uninstall:
+
+  ./uninstall.sh
+
+This zip matches the CPU of the Mac that built it (Apple Silicon or Intel).
+Ad-hoc builds often cannot register the helper; use the password each time.
