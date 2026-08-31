@@ -1,0 +1,7 @@
+/* English usage strings for system permission prompts. */
+"CFBundleDisplayName" = "macOS wired tethering";
+"CFBundleName" = "macOS wired tethering";
+"NSAppleEventsUsageDescription" = "macOS wired tethering runs AppleScript to start the tethering engine with administrator privileges. The password is not stored.";
+"NSSystemAdministrationUsageDescription" = "Administrator access is required to configure the USB tethering tunnel, routes, and DNS. The password is not saved to disk.";
+"NSUSBUsageDescription" = "USB access is used only to talk to your Android phone for wired tethering.";
+"NSHumanReadableCopyright" = "Copyright © 2026 macOS wired tethering contributors. MIT License.";

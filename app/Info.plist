@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleLocalizations</key>
+    <array>
+        <string>ko</string>
+        <string>en</string>
+    </array>
+    <key>CFBundleExecutable</key>
+    <string>MacOSWiredTethering</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.macoswiredtethering.app</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>macOS wired tethering</string>
+    <key>CFBundleDisplayName</key>
+    <string>macOS wired tethering</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>14.0</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.utilities</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>LSHasLocalizedDisplayName</key>
+    <true/>
+    <key>NSSupportsSuddenTermination</key>
+    <false/>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+    <key>NSUSBUsageDescription</key>
+    <string>유선 테더링을 위해 연결된 안드로이드 휴대폰 USB 장치에만 접근합니다.</string>
+    <key>NSAppleEventsUsageDescription</key>
+    <string>관리자 권한으로 테더링 엔진을 시작하기 위해 AppleScript를 실행합니다. 암호는 저장하지 않습니다.</string>
+    <key>NSSystemAdministrationUsageDescription</key>
+    <string>USB 테더링 터널·경로·DNS를 설정하려면 관리자 권한이 필요합니다. 암호는 디스크에 저장하지 않습니다.</string>
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright © 2026 macOS wired tethering contributors. MIT License.</string>
+    <key>CFBundleGetInfoString</key>
+    <string>macOS wired tethering 1.0.0, Android USB tethering for macOS.</string>
+</dict>
+</plist>

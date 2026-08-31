@@ -1,0 +1,156 @@
+/* English UI — selected when macOS language is English. */
+"status.connected" = "Connected";
+"status.connected_ip" = "Connected · %@";
+"status.connecting" = "Connecting…";
+"status.renewing" = "Renewing address… · %@";
+"status.error" = "Error";
+"status.stopping" = "Disconnecting…";
+"status.idle_empty" = "Connect a phone with USB";
+"status.idle" = "Idle";
+
+"kind.rndis" = "Ready to tether";
+"kind.android" = "USB tethering required";
+"kind.unknown" = "Unknown";
+
+"helper.enabled" = "Helper on · no password on connect";
+"helper.approval" = "Helper needs approval · allow in System Settings";
+"helper.unregistered" = "Helper not registered · use a Developer ID build";
+"helper.unavailable" = "No helper · connect with a password";
+
+"engine.usb_gone" = "The USB cable was unplugged";
+"engine.tether_off" = "USB tethering is off. Turn USB tethering back on on the phone";
+"engine.usb_rx_buf" = "Could not allocate the USB receive buffer";
+"engine.dhcp_apply" = "Could not apply the DHCP lease to the interface";
+"engine.dhcp_renew" = "Could not renew the DHCP lease";
+"engine.generic" = "Engine error";
+"engine.start_failed" = "Could not start the engine";
+"engine.no_opts" = "Engine options are missing";
+"engine.oom" = "Out of memory";
+"engine.tx_buf" = "Could not allocate the transmit buffer";
+"engine.utun" = "Could not open the utun tunnel (administrator access required)";
+"engine.net_session" = "Could not start the network session (route backup failed)";
+"engine.thread" = "Could not start worker threads";
+"engine.usb_open" = "Could not open the USB RNDIS device";
+"engine.rndis_init" = "RNDIS initialization failed";
+"engine.dhcp_create" = "Could not create the DHCP client";
+"engine.no_rndis" = "No RNDIS device to connect. Turn on USB tethering.";
+"engine.not_rndis" = "The device is not in RNDIS mode. Enable USB tethering on the phone.";
+"hint.route_restore" = "A forced quit may have left the default route and DNS. Press Retry to restore them";
+
+"error.engine_missing" = "The engine executable was not found";
+"error.engine_missing_build" = "The engine executable was not found. Run make first.";
+"error.script" = "Could not build the administrator launch script";
+"error.socket_path" = "The status socket path is too long";
+"error.helper_connect" = "Could not connect to the privilege helper";
+"error.helper_timeout" = "The privilege helper did not respond in time";
+"error.helper_pid" = "The helper did not return an engine PID";
+"error.engine_silent" = "The engine is not responding. Check administrator authentication or helper registration";
+"error.auth_or_start" = "Administrator access was denied or the engine did not start";
+"error.engine_died_start" = "The engine exited while starting";
+"error.engine_unexpected" = "The tethering engine exited unexpectedly";
+"error.connect_failed" = "Connection error";
+"error.retry_hint" = "Press Retry, or check the USB cable and USB tethering on the phone";
+
+"helper.error.not_root" = "The helper is not running as root";
+"helper.error.bad_socket" = "The socket path is not allowed";
+"helper.error.bad_log" = "The log path is not allowed";
+"helper.error.engine_missing" = "The bundled engine was not found or its signature does not match";
+"helper.error.log_open" = "Could not open the log file";
+"helper.error.restore_timeout" = "Network restore timed out";
+
+"devices.title" = "USB devices";
+"devices.refresh" = "Refresh";
+"devices.refresh_a11y" = "Rescan USB devices";
+"devices.empty" = "Connect a phone with USB";
+"devices.row_a11y" = "%@, %@";
+
+"hint.tether_title" = "Turn on USB tethering on the phone";
+"hint.tether_body" = "Settings → Hotspot & tethering → USB tethering";
+"hint.route_title" = "Check the network route";
+
+"route.toggle" = "Use as default connection";
+"route.help" = "When on, USB tethering becomes this Mac’s default route and Wi-Fi is turned off. When off, the Wi-Fi default route is left as-is and tethering is a secondary path";
+"route.hint_on" = "When connected, Wi-Fi is turned off. On disconnect, the previous route, DNS, and Wi-Fi are restored";
+"route.hint_off" = "Wi-Fi stays on and the system default route is not changed. USB tethering is a secondary path";
+"route.a11y" = "When on, tethering becomes the default internet route and Wi-Fi is turned off";
+
+"action.disconnect" = "Disconnect";
+"action.retry" = "Retry";
+"action.connect" = "Connect";
+
+"metric.iface" = "Interface";
+"metric.ipv4" = "IPv4";
+"metric.gateway" = "Gateway";
+"metric.dns" = "DNS";
+"metric.link" = "USB link";
+"metric.mtu" = "Tunnel MTU";
+"metric.live" = "Now ↓ %@   ↑ %@";
+"metric.peak" = "Peak ↓ %@   ↑ %@";
+"metric.bytes" = "Data RX %@   TX %@";
+"metric.drops" = "Drops/errors RX %@   TX %@";
+"metric.link_usb1" = "USB 1.x · %u Mbps";
+"metric.link_usb2" = "USB 2.0 HS · %u Mbps";
+"metric.link_usb3" = "USB 3.x · %u Mbps";
+
+"footer.about" = "About";
+"footer.about_help" = "Version and privacy";
+"footer.about_a11y" = "About this app";
+"footer.helper" = "Helper";
+"footer.helper_off" = "Remove helper";
+"footer.helper_help" = "Register the privilege helper to skip the password on later connections. Press again to remove it";
+"footer.helper_on_a11y" = "Remove privilege helper";
+"footer.helper_off_a11y" = "Register privilege helper";
+"footer.log" = "Log";
+"footer.log_a11y" = "Open log window";
+"footer.quit" = "Quit";
+"footer.quit_a11y" = "Quit the app";
+
+"log.title" = "Log";
+"log.line_count" = "%d lines";
+"log.window_title" = "%@ log";
+
+"about.version" = "Version %@(%@)";
+"about.privacy1" = "This app does not send personal data to a developer server.";
+"about.privacy2" = "The administrator password is not stored.";
+"about.developer" = "Developed by Minkipapa";
+"about.github_a11y" = "GitHub, Minkipapa";
+
+"auth.intro" = "This is an administrator authentication request to start tethering.";
+"auth.prompt" = "Enter an administrator password to allow this.";
+"auth.cancel" = "Cancel";
+"auth.ok" = "OK";
+"auth.checking" = "Checking…";
+"auth.password" = "Password";
+"auth.bad_password" = "The password is incorrect";
+"auth.not_admin" = "This account is not in the admin group";
+
+"log.starting" = "Starting %@";
+"log.no_devices" = "No Android device is connected";
+"log.device_seen" = "%@ detected · %@ · %@";
+"log.no_usb" = "No USB device to connect. Check the cable and USB tethering";
+"log.not_rndis" = "%@ is not in RNDIS mode. Turn on USB tethering on the phone";
+"log.connecting" = "Connecting to %@";
+"log.helper_fallback" = "Helper start failed, switching to password authentication: %@";
+"log.auth_request" = "Requesting administrator authentication to start tethering";
+"log.auth_cancel" = "Administrator authentication was cancelled";
+"log.helper_start" = "Starting the engine via the privilege helper (no password)";
+"log.helper_pid" = "Helper started engine PID %d";
+"log.engine_log" = "Engine log: %@";
+"log.helper_remove_busy" = "Disconnecting the tether session before removing the privilege helper";
+"log.helper_removed" = "Privilege helper removed. The next connection will ask for a password";
+"log.helper_allow" = "Allow the helper in System Settings → General → Login Items";
+"log.helper_registered" = "Privilege helper registered. Later connections will not ask for a password";
+"log.helper_status" = "Helper status: %@";
+"log.helper_change_fail" = "Helper change failed: %@";
+"log.helper_adhoc" = "Ad-hoc signing often cannot register the helper. Use make dist with a Developer ID";
+"log.wifi_restore" = "Wi-Fi restore: %@";
+"log.force_kill" = "The engine did not exit; forcing termination";
+"log.force_kill_fail" = "Forced termination failed. The next connection will clean up routes";
+"log.restored_after_kill" = "Network routes were restored after a forced quit";
+"log.restore_fail" = "Route restore failed: %@. Press Retry to restore";
+"log.disconnected" = "Disconnected";
+"log.wifi_on" = "CoreWLAN %@ on";
+"log.wifi_pending" = "CoreWLAN %@ setPower called but still off";
+"log.wifi_err" = "CoreWLAN %@: %@";
+"log.wifi_ns_on" = "networksetup %@ on";
+"log.wifi_ns_fail" = "networksetup %@ on failed";

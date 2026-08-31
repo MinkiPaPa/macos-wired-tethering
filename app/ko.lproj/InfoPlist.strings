@@ -1,0 +1,7 @@
+/* 시스템 권한 요청에 쓰는 한국어 문구. */
+"CFBundleDisplayName" = "macOS wired tethering";
+"CFBundleName" = "macOS wired tethering";
+"NSAppleEventsUsageDescription" = "관리자 권한으로 테더링 엔진을 시작하기 위해 AppleScript를 실행합니다. 암호는 저장하지 않습니다.";
+"NSSystemAdministrationUsageDescription" = "USB 테더링 터널·경로·DNS를 설정하려면 관리자 권한이 필요합니다. 암호는 디스크에 저장하지 않습니다.";
+"NSUSBUsageDescription" = "유선 테더링을 위해 연결된 안드로이드 휴대폰 USB 장치에만 접근합니다.";
+"NSHumanReadableCopyright" = "Copyright © 2026 macOS wired tethering contributors. MIT License.";

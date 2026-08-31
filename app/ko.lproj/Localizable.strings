@@ -1,0 +1,156 @@
+/* 한국어 UI — macOS 언어가 한국어일 때 사용. */
+"status.connected" = "연결됨";
+"status.connected_ip" = "연결됨 · %@";
+"status.connecting" = "연결 중…";
+"status.renewing" = "주소 갱신 중… · %@";
+"status.error" = "오류";
+"status.stopping" = "종료 중…";
+"status.idle_empty" = "휴대폰을 USB로 연결하세요";
+"status.idle" = "대기 중";
+
+"kind.rndis" = "테더링 준비됨";
+"kind.android" = "USB 테더링 필요";
+"kind.unknown" = "알 수 없음";
+
+"helper.enabled" = "헬퍼 사용 중 · 연결 시 암호 없음";
+"helper.approval" = "헬퍼 승인 필요 · 시스템 설정에서 허용";
+"helper.unregistered" = "헬퍼 미등록 · Developer ID 빌드에서 등록";
+"helper.unavailable" = "헬퍼 없음 · 암호로 연결";
+
+"engine.usb_gone" = "USB 케이블이 분리되었습니다";
+"engine.tether_off" = "USB 테더링이 꺼졌습니다. 휴대폰에서 USB 테더링을 다시 켜세요";
+"engine.usb_rx_buf" = "USB 수신 버퍼를 할당하지 못했습니다";
+"engine.dhcp_apply" = "DHCP 임대를 인터페이스에 적용하지 못했습니다";
+"engine.dhcp_renew" = "DHCP 임대를 갱신하지 못했습니다";
+"engine.generic" = "엔진 오류";
+"engine.start_failed" = "엔진을 시작하지 못했습니다";
+"engine.no_opts" = "엔진 옵션이 없습니다";
+"engine.oom" = "메모리가 부족합니다";
+"engine.tx_buf" = "전송 버퍼를 할당하지 못했습니다";
+"engine.utun" = "가상 터널(utun)을 열 수 없습니다 (관리자 권한 필요)";
+"engine.net_session" = "네트워크 세션을 시작하지 못했습니다 (경로 백업 실패)";
+"engine.thread" = "작업 스레드를 시작하지 못했습니다";
+"engine.usb_open" = "USB RNDIS 장치를 열 수 없습니다";
+"engine.rndis_init" = "RNDIS 초기화에 실패했습니다";
+"engine.dhcp_create" = "DHCP 클라이언트를 만들지 못했습니다";
+"engine.no_rndis" = "연결할 RNDIS 장치가 없습니다. USB 테더링을 켜세요.";
+"engine.not_rndis" = "장치가 RNDIS 모드가 아닙니다. 휴대폰에서 USB 테더링을 활성화하세요.";
+"hint.route_restore" = "강제 종료로 기본 경로·DNS가 남아 있을 수 있습니다. 다시 시도를 누르면 복구합니다";
+
+"error.engine_missing" = "엔진 실행 파일을 찾을 수 없습니다";
+"error.engine_missing_build" = "엔진 실행 파일을 찾을 수 없습니다. make 로 먼저 빌드하세요.";
+"error.script" = "관리자 실행 스크립트를 만들지 못했습니다";
+"error.socket_path" = "상태 소켓 경로가 너무 깁니다";
+"error.helper_connect" = "권한 헬퍼에 연결하지 못했습니다";
+"error.helper_timeout" = "권한 헬퍼 응답이 지연되어 중단했습니다";
+"error.helper_pid" = "헬퍼가 엔진 PID 를 반환하지 않았습니다";
+"error.engine_silent" = "엔진이 응답하지 않습니다. 관리자 인증 또는 헬퍼 등록을 확인하세요";
+"error.auth_or_start" = "관리자 권한이 거부되었거나 엔진이 시작되지 않았습니다";
+"error.engine_died_start" = "엔진이 시작 중에 종료되었습니다";
+"error.engine_unexpected" = "테더링 엔진이 예기치 않게 종료되었습니다";
+"error.connect_failed" = "연결 오류";
+"error.retry_hint" = "다시 시도를 누르거나, USB 케이블과 휴대폰 USB 테더링을 확인하세요";
+
+"helper.error.not_root" = "헬퍼가 root 가 아닙니다";
+"helper.error.bad_socket" = "허용되지 않은 소켓 경로입니다";
+"helper.error.bad_log" = "허용되지 않은 로그 경로입니다";
+"helper.error.engine_missing" = "번들 엔진을 찾지 못했거나 서명이 맞지 않습니다";
+"helper.error.log_open" = "로그 파일을 열 수 없습니다";
+"helper.error.restore_timeout" = "네트워크 복구가 시간 초과되었습니다";
+
+"devices.title" = "USB 장치";
+"devices.refresh" = "다시 검색";
+"devices.refresh_a11y" = "USB 장치 다시 검색";
+"devices.empty" = "휴대폰을 USB로 연결하세요";
+"devices.row_a11y" = "%@, %@";
+
+"hint.tether_title" = "휴대폰에서 USB 테더링을 켜세요";
+"hint.tether_body" = "설정 → 핫스팟 및 테더링 → USB 테더링";
+"hint.route_title" = "네트워크 경로를 확인하세요";
+
+"route.toggle" = "기본 연결로 사용";
+"route.help" = "켜면 USB 테더링을 Mac의 기본 연결로 쓰고 연결 시 Wi-Fi를 끕니다. 끄면 Wi-Fi 기본 경로는 그대로 두고 테더링은 보조 경로입니다";
+"route.hint_on" = "연결되면 Wi-Fi를 끄고, 해제 시 이전 경로·DNS·Wi-Fi를 되돌립니다";
+"route.hint_off" = "Wi-Fi를 유지하고 시스템 기본 경로는 바꾸지 않습니다. USB 테더링은 보조 경로입니다";
+"route.a11y" = "켜면 테더링이 기본 인터넷 경로가 되고 Wi-Fi를 끕니다";
+
+"action.disconnect" = "연결 해제";
+"action.retry" = "다시 시도";
+"action.connect" = "연결";
+
+"metric.iface" = "인터페이스";
+"metric.ipv4" = "IPv4";
+"metric.gateway" = "게이트웨이";
+"metric.dns" = "DNS";
+"metric.link" = "USB 링크";
+"metric.mtu" = "터널 MTU";
+"metric.live" = "현재 ↓ %@   ↑ %@";
+"metric.peak" = "최대 ↓ %@   ↑ %@";
+"metric.bytes" = "송수신 데이터 RX %@   TX %@";
+"metric.drops" = "폐기·오류 RX %@   TX %@";
+"metric.link_usb1" = "USB 1.x · %u Mbps";
+"metric.link_usb2" = "USB 2.0 HS · %u Mbps";
+"metric.link_usb3" = "USB 3.x · %u Mbps";
+
+"footer.about" = "정보";
+"footer.about_help" = "버전과 개인정보 안내";
+"footer.about_a11y" = "앱 정보";
+"footer.helper" = "헬퍼";
+"footer.helper_off" = "헬퍼 해제";
+"footer.helper_help" = "권한 헬퍼를 등록하면 연결 시 암호를 다시 묻지 않습니다. 다시 누르면 해제합니다";
+"footer.helper_on_a11y" = "권한 헬퍼 해제";
+"footer.helper_off_a11y" = "권한 헬퍼 등록";
+"footer.log" = "로그";
+"footer.log_a11y" = "로그 창 열기";
+"footer.quit" = "종료";
+"footer.quit_a11y" = "앱 종료";
+
+"log.title" = "로그";
+"log.line_count" = "%d줄";
+"log.window_title" = "%@ 로그";
+
+"about.version" = "버전 %@(%@)";
+"about.privacy1" = "이 앱은 개발사 서버로 개인정보를 보내지 않습니다.";
+"about.privacy2" = "관리자 암호는 저장하지 않습니다.";
+"about.developer" = "Developed by Minkipapa";
+"about.github_a11y" = "GitHub, Minkipapa";
+
+"auth.intro" = "테더링 연결을 위한 관리자 시스템 인증 요청입니다.";
+"auth.prompt" = "허용하려면 관리자 암호를 입력하십시오.";
+"auth.cancel" = "취소";
+"auth.ok" = "확인";
+"auth.checking" = "확인 중…";
+"auth.password" = "암호";
+"auth.bad_password" = "암호가 올바르지 않습니다";
+"auth.not_admin" = "이 계정은 관리자 그룹에 없습니다";
+
+"log.starting" = "%@을 시작합니다";
+"log.no_devices" = "연결된 안드로이드 기기가 없습니다";
+"log.device_seen" = "%@ 감지 · %@ · %@";
+"log.no_usb" = "연결할 USB 기기가 없습니다. 케이블과 USB 테더링을 확인하세요";
+"log.not_rndis" = "%@ 은(는) RNDIS 모드가 아닙니다. 휴대폰에서 USB 테더링을 켜세요";
+"log.connecting" = "%@ 에 연결을 시도합니다";
+"log.helper_fallback" = "권한 헬퍼 시작 실패, 암호 인증으로 전환합니다: %@";
+"log.auth_request" = "테더링 연결을 위한 관리자 시스템 인증을 요청합니다";
+"log.auth_cancel" = "관리자 인증을 취소했습니다";
+"log.helper_start" = "권한 헬퍼로 엔진을 시작합니다 (암호 없음)";
+"log.helper_pid" = "헬퍼가 엔진 PID %d 를 시작했습니다";
+"log.engine_log" = "엔진 로그: %@";
+"log.helper_remove_busy" = "권한 헬퍼를 해제하기 전에 테더링 세션을 종료합니다";
+"log.helper_removed" = "권한 헬퍼를 해제했습니다. 다음 연결부터 암호를 묻습니다";
+"log.helper_allow" = "시스템 설정 → 일반 → 로그인 항목에서 헬퍼를 허용하세요";
+"log.helper_registered" = "권한 헬퍼가 등록되었습니다. 다음 연결부터 암호를 묻지 않습니다";
+"log.helper_status" = "헬퍼 상태: %@";
+"log.helper_change_fail" = "헬퍼 변경 실패: %@";
+"log.helper_adhoc" = "ad-hoc 서명에서는 헬퍼가 거절될 수 있습니다. Developer ID 로 make dist 하세요";
+"log.wifi_restore" = "Wi-Fi 복구: %@";
+"log.force_kill" = "엔진이 끝나지 않아 강제 종료합니다";
+"log.force_kill_fail" = "강제 종료에 실패했습니다. 다음 연결에서 경로를 정리합니다";
+"log.restored_after_kill" = "강제 종료 후 네트워크 경로를 복구했습니다";
+"log.restore_fail" = "경로 복구 실패: %@. 다시 시도하면 복구합니다";
+"log.disconnected" = "연결을 해제했습니다";
+"log.wifi_on" = "CoreWLAN %@ on";
+"log.wifi_pending" = "CoreWLAN %@ setPower 호출했으나 아직 off";
+"log.wifi_err" = "CoreWLAN %@: %@";
+"log.wifi_ns_on" = "networksetup %@ on";
+"log.wifi_ns_fail" = "networksetup %@ on 실패";
